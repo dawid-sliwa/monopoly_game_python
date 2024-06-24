@@ -1,0 +1,242 @@
+[
+    {
+        "name": "Go",
+        "price": 0,
+        "color": "Go",
+        "coordinates": "(675, 675)"
+    },
+    {
+        "name": "Old Kent Road",
+        "price": 60,
+        "color": "Brown",
+        "coordinates": "(597, 675)"
+    },
+    {
+        "name": "Community Chest",
+        "price": 0,
+        "color": "Community Chest",
+        "coordinates": "(540, 675)"
+    },
+    {
+        "name": "Whitechapel Road",
+        "price": 60,
+        "color": "Brown",
+        "coordinates": "(480, 675)"
+    },
+    {
+        "name": "Income Tax",
+        "price": 200,
+        "color": "Tax",
+        "coordinates": "(420, 675)"
+    },
+    {
+        "name": "King's Cross Station",
+        "price": 200,
+        "color": "Station",
+        "coordinates": "(362, 675)"
+    },
+    {
+        "name": "The Angel Islington",
+        "price": 100,
+        "color": "Light Blue",
+        "coordinates": "(302, 675)"
+    },
+    {
+        "name": "Chance",
+        "price": 0,
+        "color": "Chance",
+        "coordinates": "(245, 675)"
+    },
+    {
+        "name": "Euston Road",
+        "price": 100,
+        "color": "Light Blue",
+        "coordinates": "(185, 675)"
+    },
+    {
+        "name": "Pentonville Road",
+        "price": 120,
+        "color": "Light Blue",
+        "coordinates": "(126, 675)"
+    },
+    {
+        "name": "Jail",
+        "price": 0,
+        "color": "Jail",
+        "coordinates": "(30, 690)"
+    },
+    {
+        "name": "Pall Mall",
+        "price": 140,
+        "color": "Pink",
+        "coordinates": "(40, 595)"
+    },
+    {
+        "name": "Electric Company",
+        "price": 150,
+        "color": "Utility",
+        "coordinates": "(40, 536)"
+    },
+    {
+        "name": "Whitehall",
+        "price": 140,
+        "color": "Pink",
+        "coordinates": "(40, 478)"
+    },
+    {
+        "name": "Northumberland Avenue",
+        "price": 160,
+        "color": "Pink",
+        "coordinates": "(40, 420)"
+    },
+    {
+        "name": "Marylebone Station",
+        "price": 200,
+        "color": "Station",
+        "coordinates": "(40, 360)"
+    },
+    {
+        "name": "Bow Street",
+        "price": 180,
+        "color": "Orange",
+        "coordinates": "(40, 300)"
+    },
+    {
+        "name": "Community Chest",
+        "price": 0,
+        "color": "Community Chest",
+        "coordinates": "(40, 242)"
+    },
+    {
+        "name": "Marlborough Street",
+        "price": 180,
+        "color": "Orange",
+        "coordinates": "(40, 184)"
+    },
+    {
+        "name": "Vine Street",
+        "price": 200,
+        "color": "Orange",
+        "coordinates": "(40, 125)"
+    },
+    {
+        "name": "Free Parking",
+        "price": 0,
+        "color": "Free Parking",
+        "coordinates": "(50, 50)"
+    },
+    {
+        "name": "Strand",
+        "price": 220,
+        "color": "Red",
+        "coordinates": "(126, 40)"
+    },
+    {
+        "name": "Chance",
+        "price": 0,
+        "color": "Chance",
+        "coordinates": "(185, 40)"
+    },
+    {
+        "name": "Fleet Street",
+        "price": 220,
+        "color": "Red",
+        "coordinates": "(245, 40)"
+    },
+    {
+        "name": "Trafalgar Square",
+        "price": 240,
+        "color": "Red",
+        "coordinates": "(302, 40)"
+    },
+    {
+        "name": "Frenchurch St. Station",
+        "price": 200,
+        "color": "Station",
+        "coordinates": "(362, 40)"
+    },
+    {
+        "name": "Leicester Square",
+        "price": 260,
+        "color": "Yellow",
+        "coordinates": "(420, 40)"
+    },
+    {
+        "name": "Coventry Street",
+        "price": 260,
+        "color": "Yellow",
+        "coordinates": "(480, 40)"
+    },
+    {
+        "name": "Water Works",
+        "price": 150,
+        "color": "Utility",
+        "coordinates": "(540, 40)"
+    },
+    {
+        "name": "Piccadilly",
+        "price": 280,
+        "color": "Yellow",
+        "coordinates": "(597, 40)"
+    },
+    {
+        "name": "Go to Jail",
+        "price": 0,
+        "color": "Go to Jail",
+        "coordinates": "(670, 45)"
+    },
+    {
+        "name": "Regent Street",
+        "price": 300,
+        "color": "Green",
+        "coordinates": "(678, 125)"
+    },
+    {
+        "name": "Oxford Street",
+        "price": 300,
+        "color": "Green",
+        "coordinates": "(678, 184)"
+    },
+    {
+        "name": "Community Chest",
+        "price": 0,
+        "color": "Community Chest",
+        "coordinates": "(678, 242)"
+    },
+    {
+        "name": "Bond Street",
+        "price": 320,
+        "color": "Green",
+        "coordinates": "(678, 300)"
+    },
+    {
+        "name": "Liverpool St. Station",
+        "price": 200,
+        "color": "Station",
+        "coordinates": "(678, 360)"
+    },
+    {
+        "name": "Chance",
+        "price": 0,
+        "color": "Chance",
+        "coordinates": "(678, 420)"
+    },
+    {
+        "name": "Park Lane",
+        "price": 350,
+        "color": "Dark Blue",
+        "coordinates": "(678, 478)"
+    },
+    {
+        "name": "Super Tax",
+        "price": 100,
+        "color": "Tax",
+        "coordinates": "(678, 536)"
+    },
+    {
+        "name": "Mayfair",
+        "price": 400,
+        "color": "Dark Blue",
+        "coordinates": "(678, 595)"
+    }
+]

@@ -1,0 +1,92 @@
+[
+    {
+        "type": "c",
+        "action": "give",
+        "amount": 50,
+        "description": "Speeding fine $50"
+    },
+    {
+        "type": "c",
+        "action": "give",
+        "amount": 150,
+        "description": "Pay $150"
+    },
+    {
+        "type": "c",
+        "action": "get",
+        "amount": 30,
+        "description": "Collect $30"
+    },
+    {
+        "type": "c",
+        "action": "get",
+        "amount": 100,
+        "description": "Bank pays you $100"
+    },
+    {
+        "type": "c",
+        "action": "giveall",
+        "amount": 50,
+        "description": "Pay each player $50"
+    },
+    {
+        "type": "c",
+        "action": "move",
+        "destination": "go",
+        "description": "Advance to Go."
+    },
+    {
+        "type": "cc",
+        "action": "give",
+        "amount": 150,
+        "description": "Doctor’s fee. Pay $150"
+    },
+    {
+        "type": "cc",
+        "action": "give",
+        "amount": 50,
+        "description": "Pay hospital fees of $50"
+    },
+    {
+        "type": "cc",
+        "action": "give",
+        "amount": 20,
+        "description": "Pay $20"
+    },
+    {
+        "type": "cc",
+        "action": "give",
+        "amount": 200,
+        "description": "Pay school fees of $200"
+    },
+    {
+        "type": "cc",
+        "action": "get",
+        "amount": 70,
+        "description": "Receive $70"
+    },
+    {
+        "type": "cc",
+        "action": "get",
+        "amount": 150,
+        "description": "You inherit $150"
+    },
+    {
+        "type": "cc",
+        "action": "get",
+        "amount": 100,
+        "description": "Collect $100"
+    },
+    {
+        "type": "cc",
+        "action": "get",
+        "amount": 50,
+        "description": "Receive $50"
+    },
+    {
+        "type": "cc",
+        "action": "move",
+        "destination": "go",
+        "description": "Advance to Go."
+    }
+]
