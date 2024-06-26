@@ -412,6 +412,7 @@ class Game:
                 property_obj["coordinates"] = eval(prop["coordinates"])
                 index += 1
 
+
         self.card_properties = {}
 
         with open("propertycards.json") as f:
@@ -426,6 +427,7 @@ class Game:
             self.game_screen, image=self.player_1_image, borderwidth=0, bg=self.BG_COLOR
         )
         self.player_1_avatar.place(x=790, y=50, anchor="nw")
+
         self.player_1_money = tk.Label(
             self.game_screen,
             text="$1500",
@@ -444,6 +446,7 @@ class Game:
             font=("Arial", 20),
         )
         self.player_1_nickname.place(x=790, y=40, anchor="nw")
+
 
         self.player_2_avatar = tk.Label(
             self.game_screen, image=self.player_2_image, borderwidth=0, bg=self.BG_COLOR
@@ -466,12 +469,15 @@ class Game:
             fg="white",
             font=("Arial", 20),
         )
+
         self.player_2_nickname.place(x=1050, y=40, anchor="nw")
+
 
         self.player_3_avatar = tk.Label(
             self.game_screen, image=self.player_3_image, borderwidth=0, bg=self.BG_COLOR
         )
         self.player_3_avatar.place(x=790, y=270, anchor="nw")
+
         self.player_3_money = tk.Label(
             self.game_screen,
             text="$1500",
@@ -491,10 +497,12 @@ class Game:
         )
         self.player_3_nickname.place(x=790, y=250, anchor="nw")
 
+
         self.player_4_avatar = tk.Label(
             self.game_screen, image=self.player_4_image, borderwidth=0, bg=self.BG_COLOR
         )
         self.player_4_avatar.place(x=1050, y=270, anchor="nw")
+
         self.player_4_money = tk.Label(
             self.game_screen,
             text="$1500",
@@ -512,7 +520,9 @@ class Game:
             fg="white",
             font=("Arial", 20),
         )
+
         self.player_4_nickname.place(x=1050, y=250, anchor="nw")
+
 
         self.player_1["token"] = self.board.create_image(
             651, 650, image=self.player_1["avatar_image"], anchor="center"
