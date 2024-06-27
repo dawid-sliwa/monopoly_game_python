@@ -1,1 +1,1 @@
-Monopoly game in python prolly persistance through sqlite
+Monopoly game in python 
