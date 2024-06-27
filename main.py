@@ -412,7 +412,6 @@ class Game:
                 property_obj["coordinates"] = eval(prop["coordinates"])
                 index += 1
 
-
         self.card_properties = {}
 
         with open("propertycards.json") as f:
@@ -427,7 +426,6 @@ class Game:
             self.game_screen, image=self.player_1_image, borderwidth=0, bg=self.BG_COLOR
         )
         self.player_1_avatar.place(x=790, y=50, anchor="nw")
-
         self.player_1_money = tk.Label(
             self.game_screen,
             text="$1500",
@@ -446,7 +444,6 @@ class Game:
             font=("Arial", 20),
         )
         self.player_1_nickname.place(x=790, y=40, anchor="nw")
-
 
         self.player_2_avatar = tk.Label(
             self.game_screen, image=self.player_2_image, borderwidth=0, bg=self.BG_COLOR
@@ -469,15 +466,12 @@ class Game:
             fg="white",
             font=("Arial", 20),
         )
-
         self.player_2_nickname.place(x=1050, y=40, anchor="nw")
-
 
         self.player_3_avatar = tk.Label(
             self.game_screen, image=self.player_3_image, borderwidth=0, bg=self.BG_COLOR
         )
         self.player_3_avatar.place(x=790, y=270, anchor="nw")
-
         self.player_3_money = tk.Label(
             self.game_screen,
             text="$1500",
@@ -497,12 +491,10 @@ class Game:
         )
         self.player_3_nickname.place(x=790, y=250, anchor="nw")
 
-
         self.player_4_avatar = tk.Label(
             self.game_screen, image=self.player_4_image, borderwidth=0, bg=self.BG_COLOR
         )
         self.player_4_avatar.place(x=1050, y=270, anchor="nw")
-
         self.player_4_money = tk.Label(
             self.game_screen,
             text="$1500",
@@ -520,9 +512,7 @@ class Game:
             fg="white",
             font=("Arial", 20),
         )
-
         self.player_4_nickname.place(x=1050, y=250, anchor="nw")
-
 
         self.player_1["token"] = self.board.create_image(
             651, 650, image=self.player_1["avatar_image"], anchor="center"
@@ -625,21 +615,15 @@ class Game:
         self.dice_2.place(x=380, y=560, anchor="w")
 
     def determine_winner(self):
-        highest_score = sorted(
+        sorted_players = sorted(
             [self.player_1, self.player_2, self.player_3, self.player_4],
             key=lambda x: x["high_roll"],
-        )[-1]
+            reverse=True,
+        )
+        highest_score = sorted_players[0]
         print(highest_score)
 
-        order_stack = []
-        player_list = [self.player_1, self.player_2, self.player_3, self.player_4]
-        for player in [self.player_1, self.player_2, self.player_3, self.player_4]:
-            player_list.pop()
-            if player == highest_score:
-                order = [player, *player_list[::-1], *order_stack]
-                self.player_order_loop = itertools.cycle(order)
-            else:
-                order_stack.append(player)
+        self.player_order_loop = itertools.cycle(sorted_players)
 
         winner = tk.Label(
             self.game_screen,
@@ -922,7 +906,7 @@ class Game:
                 fg="white",
                 font=("Arial", 20),
             )
-            self.display_label.place(x=360, y=280, anchor="n")
+            self.display_label.place(x=360, y=350, anchor="n")
 
             self.root.after(2000, self.game_over)
             return True
@@ -967,7 +951,7 @@ class Game:
                     fg="white",
                     font=("Arial", 20),
                 )
-                self.display_label.place(x=360, y=280, anchor="n")
+                self.display_label.place(x=360, y=350, anchor="n")
 
     def tax_field(self):
         self.current_player["money"] -= self.current_player_location_property["price"]
@@ -980,7 +964,7 @@ class Game:
                 fg="white",
                 font=("Arial", 20),
             )
-            self.display_label.place(x=360, y=280, anchor="n")
+            self.display_label.place(x=360, y=350, anchor="n")
 
     def card_field(self):
 
@@ -1036,7 +1020,7 @@ class Game:
                 fg="black",
                 font=("Arial", 20),
             )
-            self.display_label.place(x=360, y=280, anchor="n")
+            self.display_label.place(x=360, y=350, anchor="n")
 
     def jail_field(self):
         self.current_player["money"] -= 50
@@ -1050,7 +1034,7 @@ class Game:
                 fg="white",
                 font=("Arial", 20),
             )
-            self.display_label.place(x=360, y=280, anchor="n")
+            self.display_label.place(x=360, y=350, anchor="n")
 
             if self.current_player["type"] == "player":
                 self.confirm_end_turn_show()
@@ -1064,13 +1048,13 @@ class Game:
             self.update_money()
             self.display_label = tk.Label(
                 self.game_screen,
-                text=f"{self.current_player['name']} paid {self.current_player_location_property['rent']} to {self.current_player_location_property['owner']['name']}",
+                text=f"{self.current_player['name']} paid {self.current_player_location_property['rent']}$ to {self.current_player_location_property['owner']['name']}",
                 borderwidth=0,
                 bg=self.BG_COLOR,
                 fg="white",
                 font=("Arial", 20),
             )
-            self.display_label.place(x=360, y=280, anchor="n")
+            self.display_label.place(x=360, y=350, anchor="n")
 
 
 if __name__ == "__main__":
